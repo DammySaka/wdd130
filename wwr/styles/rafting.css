@@ -55,6 +55,11 @@ article {
     text-decoration: none;
 }
 
+.hero {
+    position: relative;
+
+}
+
 .hero img {
     display: block;
     width: 100%;
@@ -72,7 +77,7 @@ article {
     color: var(--white);
 }
 
-.article {
+.hero article {
     position: absolute;
     bottom: 2rem;
     left: 2rem;
@@ -80,7 +85,7 @@ article {
     background-color: var(--secondary-color);
 }
 
-.hero .article img {
+.hero article img {
     float: right;
     width: 13rem;
     margin: 0 0 0 1rem;
