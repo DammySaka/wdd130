@@ -51,6 +51,10 @@ article {
     padding: 8px;
 }
 
+.history img {
+    width:
+}
+
 header {
     display: grid;
     grid-template-columns: 150px auto;
@@ -130,4 +134,15 @@ footer p {
     float: right;
     width: 13rem;
     margin: 0 0 0 1rem;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    gap: 1rem;
+}
+
+.history h2 {
+    grid-column: 1/-1;
+    justify-self: center;
 }
