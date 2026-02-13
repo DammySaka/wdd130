@@ -73,7 +73,7 @@ nav {
 }
 
 nav a {
-    color: var(--white);
+    color: var(--primary-color);
     padding: 1rem;
     text-decoration: none;
 }
