@@ -162,26 +162,6 @@ figcaption {
     text-align: center;
 }
 
-.company-info,
-.employees,
-.contact-form {
-    margin: 2rem 0;
-}
-
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-button {
-    background-color: #0066cc;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
 button:hover {
     background-color: #004999;
 }
