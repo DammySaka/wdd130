@@ -8,15 +8,13 @@
       content="Discover the thrill of white water rafting with Rapids!—your premier adventure guide since 1995.">
     <meta name="author" content="saka damilola">
     <title>About Us | Rapids!</title>
-    <!-- Added Favicon placeholder -->
-    <link rel="icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rapids! Rafting Logo" width="150" height="auto">
-        <nav aria-label="Main Navigation">
+        <img src="images/logo.png" alt="Rapids! Rafting Logo" width="150">
+        <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -26,20 +24,16 @@
 
     <main>
         <div class="hero">
-            <!-- Added dimensions to prevent layout shift -->
-            <img src="images/hero.jpg" alt="White water rafting on a wild river" width="1200"
-              height="600">
+            <img src="images/hero.jpg" alt="White water rafting on a wild river">
             <h1>Rapids! Make Memories!</h1>
-            <!-- Changed article to div for semantic accuracy -->
-            <div class="hero-content">
-                <img src="images/small-rafting.jpg" alt="Rafters paddling through class 4 rapids"
-                  width="300" height="200">
+            <article>
+                <img src="images/small-rafting.jpg" alt="small rafting action shot">
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quaerat nisi
                     nesciunt consequuntur nulla dolore ullam, architecto est nostrum accusamus
                     tenetur reprehenderit iste iusto! Iste asperiores non ab perspiciatis deserunt.
                 </p>
-            </div>
+            </article>
         </div>
 
         <section class="history">
@@ -48,9 +42,7 @@
                 Asperiores eveniet dolores cupiditate consequatur, ut ratione. Voluptatibus
                 reiciendis libero minus asperiores, quidem laboriosam exercitationem at provident
                 sequi?</p>
-            <!-- Improved alt text and added dimensions -->
-            <img src="images/history.jpg" alt="Black and white photo of the founding team in 1995"
-              width="800" height="400">
+            <img src="images/history.jpg" alt="history">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quae, maiores, id
                 iure atque, vel laboriosam inventore neque voluptatum exercitationem temporibus
                 porro sunt eos aperiam ducimus aliquid? Animi, corporis neque?</p>
@@ -59,51 +51,42 @@
         <section class="adventure">
             <h2>Adventure Awaits You!</h2>
             <figure>
-                <img src="images/add.jpg" alt="Group high-fiving after finishing the course"
-                  width="400" height="300">
+                <img src="images/add.jpg" alt="happy people everywhere">
                 <figcaption>Rafting Adventure 1</figcaption>
             </figure>
             <figure>
-                <img src="images/add2.jpg" alt="Raft overturning in rough water" width="400"
-                  height="300">
+                <img src="images/add2.jpg" alt="happy people everywhere">
                 <figcaption>Rafting Adventure 2</figcaption>
             </figure>
             <figure>
-                <img src="images/add3.jpg" alt="Calm river scenery with mountains" width="400"
-                  height="300">
+                <img src="images/add3.jpg" alt="happy people everywhere">
                 <figcaption>Rafting Adventure 3</figcaption>
             </figure>
             <figure>
-                <img src="images/add4.jpg" alt="Guide explaining safety gear" width="400"
-                  height="300">
+                <img src="images/add4.jpg" alt="happy people everywhere">
                 <figcaption>Rafting Adventure 4</figcaption>
             </figure>
             <figure>
-                <img src="images/add5.jpg" alt="Sunset view from the raft" width="400" height="300">
+                <img src="images/add5.jpg" alt="happy people everywhere">
                 <figcaption>Rafting Adventure 5</figcaption>
             </figure>
         </section>
     </main>
     <footer>
-        <!-- Use JS for dynamic year or update manually -->
-        <p>&copy; <span id="year">2026</span> | Rapids | Damilola Saka</p>
-        <nav class="social-media" aria-label="Social Media Links">
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/facebook.svg" width="60" height="60" alt="Facebook">
+        <p>&copy;2026 | Rapids | Damilola Saka</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.svg" width="60" height="60" alt="facebook logo">
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/linkedin-bw.svg" width="60" height="60" alt="LinkedIn">
+            <a href="https://linkedin.com">
+                <img src="images/linkedin-bw.svg" width="60" height="60" alt="linkedin logo">
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-                <img src="images/twitter.png" width="60" height="60" alt="Twitter">
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" width="60" height="60" alt="twitter logo">
             </a>
         </nav>
     </footer>
 
-    <!-- Script to update copyright year automatically -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 
 </html>
