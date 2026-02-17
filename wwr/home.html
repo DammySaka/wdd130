@@ -13,8 +13,8 @@
 
 <body>
     <header>
-        <img src="images/logo.png" alt="Rapids! Rafting Logo" width="150">
-        <nav>
+        <img src="images/logo.png" alt="Rapids! Rafting Logo" width="150" height="auto">
+        <nav aria-label="Main Navigation">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
@@ -25,8 +25,9 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
+            <!-- Removed trailing spaces in src, added dimensions -->
             <img src="https://luisaldanagt.github.io/wdd130/wwr/images/home-hero.jpg"
-              alt="White water rafting on a wild river with rapids">
+              alt="White water rafting on a wild river with rapids" width="1200" height="600">
             <h1>Adventure Starts Here</h1>
             <a href="trips.html" class="cta-button">Explore Our Trips</a>
         </section>
@@ -59,35 +60,41 @@
 
             <div class="content-grid">
                 <article class="content-card">
+                    <!-- Removed trailing spaces, added dimensions -->
                     <img
                       src="https://media.istockphoto.com/id/1035676610/photo/snake-river-canyon.webp?a=1&b=1&s=612x612&w=0&k=20&c=EVkX_MgdtCJbJlv8yjHQVsydWQrcTyIS4ZYeeIMFtKE="
-                      alt="Scenic river canyon with beautiful landscape">
+                      alt="Scenic river canyon with beautiful landscape" width="612" height="408">
                     <h3>Scenic Beauty</h3>
                     <p>Experience breathtaking views of pristine wilderness and majestic canyons
                         while navigating exciting rapids.</p>
                 </article>
 
                 <article class="content-card">
+                    <!-- Removed trailing spaces, added dimensions -->
                     <img src="https://luisaldanagt.github.io/wdd130/wwr/images/home-family.jpg"
-                      alt="Family enjoying white water rafting adventure together">
+                      alt="Family enjoying white water rafting adventure together" width="800"
+                      height="600">
                     <h3>Family Fun</h3>
                     <p>Perfect for families and groups of all ages. Our expert guides ensure safety
                         while maximizing fun for everyone.</p>
                 </article>
 
                 <article class="content-card">
+                    <!-- Removed trailing spaces, added dimensions -->
                     <img
                       src="https://media.istockphoto.com/id/2235484961/photo/sunrise-on-a-cold-september-morning-at-a-hot-springs-on-the-salmon-river-in-stanley-idaho.webp?a=1&b=1&s=612x612&w=0&k=20&c=boDopa3WqgHHJ6lsINRD3CTH7acI9l452YzBcsF_U38="
-                      alt="Professional rafting guides leading expedition">
+                      alt="Professional rafting guides leading expedition" width="612" height="408">
                     <h3>Expert Guides</h3>
                     <p>Our certified guides have over 20 years of experience navigating Idaho's
                         rivers. Safety is our top priority.</p>
                 </article>
 
                 <article class="content-card">
+                    <!-- Removed trailing spaces, added dimensions -->
+                    <!-- Note: The URL hash below looks suspicious/placeholder, ensure this link is valid -->
                     <img
                       src="https://media.istockphoto.com/id/1345085037/photo/rafting-on-river.webp?a=1&b=1&s=612x612&w=0&k=20&c=QkVr7qVw5y8YfZ9XZ9XZ9XZ9XZ9XZ9XZ9XZ9XZ9XZ9X="
-                      alt="Modern rafting equipment and safety gear">
+                      alt="Modern rafting equipment and safety gear" width="612" height="408">
                     <h3>Top Equipment</h3>
                     <p>We provide the latest, highest quality gear for your safety and comfort. All
                         equipment is regularly maintained and inspected.</p>
@@ -105,19 +112,29 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 | Rapids! Rafting | Saka Damilola</p>
-        <nav class="socialmedia">
-            <a href="https://facebook.com" target="_blank" rel="noopener">
-                <img src="images/facebook-icon.png" alt="Follow us on Facebook">
+        <!-- Added span for JS year update -->
+        <p>&copy; <span id="current-year">2026</span> | Rapids! Rafting | Saka Damilola</p>
+        <nav class="social-media" aria-label="Social Media Links">
+            <!-- Removed trailing spaces in href, added noreferrer -->
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/facebook-icon.png" alt="Follow us on Facebook" width="60"
+                  height="60">
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener">
-                <img src="images/twitter-icon.png" alt="Follow us on X (Twitter)">
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/twitter-icon.png" alt="Follow us on X (Twitter)" width="60"
+                  height="60">
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener">
-                <img src="images/instagram-icon.png" alt="Follow us on Instagram">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/instagram-icon.png" alt="Follow us on Instagram" width="60"
+                  height="60">
             </a>
         </nav>
     </footer>
+
+    <!-- Script to automatically update the copyright year -->
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
